@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 22121347}
   - component: {fileID: 22121346}
   m_Layer: 0
-  m_Name: naMuseum
+  m_Name: Museum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,13 +199,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22121345}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.59, y: 0.39, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7680173, y: -6.414057, z: 0.074004956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1277081986}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1448810459}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &27949627
 GameObject:
@@ -218,8 +218,9 @@ GameObject:
   - component: {fileID: 27949629}
   - component: {fileID: 27949628}
   - component: {fileID: 27949630}
+  - component: {fileID: 27949631}
   m_Layer: 0
-  m_Name: monument copy
+  m_Name: monument
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,6 +338,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2823806, y: 3.3290439}
   m_EdgeRadius: 0
+--- !u!114 &27949631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27949627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MonumentQuizScene
 --- !u!1 &50435961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1577,7 @@ GameObject:
   - component: {fileID: 236683080}
   - component: {fileID: 236683079}
   - component: {fileID: 236683082}
+  - component: {fileID: 236683083}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1687,6 +1702,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &236683083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236683077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: KhmerKitchenScene
 --- !u!1 &248063014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3676,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3763,6 +3792,22 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &539598833
 GameObject:
   m_ObjectHideFlags: 3
@@ -3945,6 +3990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585568505}
   - component: {fileID: 585568504}
+  - component: {fileID: 585568506}
   m_Layer: 0
   m_Name: royalPalace
   m_TagString: Untagged
@@ -4012,8 +4058,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585568503}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.28, y: 1.05, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.101983, y: -5.754057, z: 0.074004956}
   m_LocalScale: {x: 1.2791, y: 1.1595, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4021,8 +4067,21 @@ Transform:
   - {fileID: 1766628417}
   - {fileID: 1605353428}
   - {fileID: 1636478532}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1448810459}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &585568506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585568503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: RoyalPalaceScene
 --- !u!1 &616492837
 GameObject:
   m_ObjectHideFlags: 0
@@ -6303,6 +6362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942058926}
   - component: {fileID: 942058925}
+  - component: {fileID: 942058927}
   m_Layer: 0
   m_Name: dumb_building2_2
   m_TagString: Untagged
@@ -6377,6 +6437,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &942058927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942058924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &946228923
 GameObject:
   m_ObjectHideFlags: 0
@@ -8054,6 +8158,7 @@ GameObject:
   - component: {fileID: 1187830767}
   - component: {fileID: 1187830766}
   - component: {fileID: 1187830769}
+  - component: {fileID: 1187830770}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8178,6 +8283,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &1187830770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187830764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: RoyalPalaceScene
 --- !u!1 &1188394424
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,9 +10870,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 27949629}
   - {fileID: 1562980366}
   - {fileID: 332934724}
+  - {fileID: 27949629}
+  - {fileID: 585568505}
+  - {fileID: 22121347}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467526949
@@ -15693,6 +15813,7 @@ GameObject:
   - component: {fileID: 2064544245}
   - component: {fileID: 2064544244}
   - component: {fileID: 2064544247}
+  - component: {fileID: 2064544248}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -15817,6 +15938,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &2064544248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064544242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MuseumScene
 --- !u!1 &2072383671
 GameObject:
   m_ObjectHideFlags: 0
@@ -16411,8 +16545,6 @@ SceneRoots:
   - {fileID: 174457727}
   - {fileID: 1236232829}
   - {fileID: 1448810459}
-  - {fileID: 22121347}
-  - {fileID: 585568505}
   - {fileID: 1468725306}
   - {fileID: 1843589510}
   - {fileID: 1594639861}
