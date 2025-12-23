@@ -7,4 +7,9 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void goHome()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }

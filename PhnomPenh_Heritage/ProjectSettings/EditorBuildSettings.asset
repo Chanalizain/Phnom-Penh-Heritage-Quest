@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MonumentQuizScene.unity
     guid: 8bdfd12f9682c43729017396e8f579e3
   - enabled: 1
     path: Assets/Scenes/RoyalPalaceScene.unity
     guid: da310d451050942e7b637cf70e1db37e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MuseumScene.unity
     guid: 95a937bd31fae45c1889036082e75b64
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: c2cfe90cf2e3cd042be63b4d3a4450fc
   - enabled: 1
     path: Assets/Scenes/KhmerKitchenScene.unity
     guid: 5be6185f6d47f40d2bdd0064601646b6
