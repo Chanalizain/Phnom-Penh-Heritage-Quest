@@ -1,187 +1,131 @@
-
-
-// QuizManager.cs
-using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class QuizManager : MonoBehaviour
 {
-    [Header("UI References")]
-    public GameObject quizPanel;
-    // CRITICAL: Drag the CanvasGroup component from your quizPanel here in the Inspector!
-    public CanvasGroup quizPanelCanvasGroup;
-    public TextMeshProUGUI questionTextUI;
-    public TextMeshProUGUI quizProgressText;
+    public HeritageSpot currentSpot;
+    public GameObject[] options;
+    private int questionIndex = 0;
 
-    [Header("Dynamic Button Setup")]
-    public GameObject answerButtonTemplate;
-    public Transform answerButtonParent;
+    // score tracking
+    private int correctAnswers = 0;
 
-    [Header("Quiz Data References")]
-    public QuizData watPhnomQuiz;
-    public QuizData independenceMonumentQuiz;
+    public Text QuestionTxt;
+    public GameObject quizUI;    // The Panel for the quiz
+    public GameObject resultUI;  // A Panel to show the result
+    public Text resultText;      // Text on the result panel
 
-    // State Tracking
-    private QuizData currentQuiz;
-    private int currentQuestionIndex = 0;
-
-    void Start()
+    public void GoToMap()
     {
-        // Ensure the quiz panel is hidden when the scene starts
-        quizPanel.SetActive(false);
+        SceneManager.LoadScene("SampleScene"); // Change "MapScene" to your actual map scene name
     }
 
-    public void StartQuiz(QuizData quizData)
+    public void RestartQuiz()
     {
-        if (GameProgress.IsBadgeCollected(quizData.landmarkID))
-        {
-            Debug.Log($"Badge already collected for {quizData.landmarkName}.");
-            return;
-        }
-
-        currentQuiz = quizData;
-        currentQuestionIndex = 0;
-        quizPanel.SetActive(true);
-
-        // --- CRITICAL PROTECTION: Ensure CanvasGroup allows interaction ---
-        if (quizPanelCanvasGroup != null)
-        {
-            quizPanelCanvasGroup.alpha = 1f;
-            quizPanelCanvasGroup.interactable = true;
-            quizPanelCanvasGroup.blocksRaycasts = true;
-        }
-
-        RenderQuestion();
+        // Reloads the current scene to try the quiz again
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void RenderQuestion()
+    // We will call this from our Map when we click a building
+    public void StartQuiz(HeritageSpot spot)
     {
-        // Re-enable interaction at the start of rendering a new question
-        if (quizPanelCanvasGroup != null)
+        currentSpot = spot;
+        questionIndex = 0;
+        correctAnswers = 0;
+
+        quizUI.SetActive(true);
+        resultUI.SetActive(false);
+
+        ShuffleList(currentSpot.questions);
+        generateQuestion();
+    }
+
+    void Awake() 
+    {
+        // High-priority check
+        if (HeritageSpot.selectedSpot != null)
         {
-            quizPanelCanvasGroup.interactable = true;
+            Debug.Log("Success! Found data for: " + HeritageSpot.selectedSpot.spotName);
+            StartQuiz(HeritageSpot.selectedSpot);
         }
+    }
 
-        QuestionItem currentItem = currentQuiz.questionsInQuiz[currentQuestionIndex];
-
-        // Update UI Text
-        questionTextUI.text = currentItem.questionText;
-        if (quizProgressText != null)
+    void ShuffleList(List<QuestionAndAnswers> list)
+    {
+        for (int i = 0; i < list.Count; i++)
         {
-            quizProgressText.text = $"Question {currentQuestionIndex + 1} of {currentQuiz.questionsInQuiz.Count}";
+            QuestionAndAnswers temp = list[i];
+            int randomIndex = Random.Range(i, list.Count);
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
         }
+    }
 
-        // Clean up old buttons efficiently
-        foreach (var child in answerButtonParent.Cast<Transform>().ToList())
+    public void correct()
+    {
+        correctAnswers++; // Count the correct answer
+        questionIndex++;
+        generateQuestion();
+    }
+
+    // Add this for wrong answers so the quiz continues
+    public void wrong()
+    {
+        questionIndex++;
+        generateQuestion();
+    }
+
+    void SetAnswer()
+    {
+        for (int i = 0; i < options.Length; i++)
         {
-            Destroy(child.gameObject);
-        }
+            options[i].GetComponent<Answer>().isCorrect = false;
+            options[i].transform.GetChild(0).GetComponent<Text>().text = currentSpot.questions[questionIndex].Answers[i];
 
-        List<string> shuffledOptions = currentItem.allAnswerOptions.ToList();
-        Shuffle(shuffledOptions);
-
-        for (int i = 0; i < shuffledOptions.Count; i++)
-        {
-            string option = shuffledOptions[i];
-
-            // 1. Create and activate the new button instance
-            GameObject newButtonGO = Instantiate(answerButtonTemplate, answerButtonParent);
-            newButtonGO.SetActive(true);
-
-            // --- CRITICAL FIX: Explicitly re-enable components on the clone ---
-            // This addresses the issue where Image/Button were unchecked at runtime.
-            Button buttonComp = newButtonGO.GetComponent<Button>();
-            Image imageComp = newButtonGO.GetComponent<Image>();
-
-            if (buttonComp != null) buttonComp.enabled = true;
-            if (imageComp != null) imageComp.enabled = true;
-            // -----------------------------------------------------------------
-
-            // 2. Get the button's Text component (retaining your original method)
-            TextMeshProUGUI buttonText = newButtonGO.GetComponentInChildren<TextMeshProUGUI>(true); // 'true' includes inactive children
-
-            if (buttonText != null)
+            if (currentSpot.questions[questionIndex].CorrectAnswer == i + 1)
             {
-                buttonText.text = option;
-                // Use a guaranteed visible color for debugging
-                buttonText.color = Color.magenta;
-                Debug.Log($"Setting button text to: {option}");
-            }
-            else
-            {
-                Debug.LogError("FATAL ERROR: TextMeshProUGUI component not found on button or its children.");
-            }
-
-            // 3. Assign the click listener
-            if (buttonComp != null)
-            {
-                buttonComp.onClick.RemoveAllListeners();
-                buttonComp.onClick.AddListener(() => CheckAnswer(option));
+                options[i].GetComponent<Answer>().isCorrect = true;
             }
         }
     }
 
-    public void CheckAnswer(string selectedAnswer)
+    void generateQuestion()
     {
-        // Prevent double-clicking by disabling interaction immediately
-        if (quizPanelCanvasGroup != null)
+        if (questionIndex < currentSpot.questions.Count)
         {
-            quizPanelCanvasGroup.interactable = false;
-        }
-
-        QuestionItem currentItem = currentQuiz.questionsInQuiz[currentQuestionIndex];
-
-        if (selectedAnswer == currentItem.correctAnswer)
-        {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < currentQuiz.questionsInQuiz.Count)
-            {
-                // Wait briefly before rendering next question 
-                Invoke("RenderQuestion", 0.5f);
-            }
-            else
-            {
-                QuizCompleteSuccess();
-            }
+            QuestionTxt.text = currentSpot.questions[questionIndex].Question;
+            SetAnswer();
         }
         else
         {
-            QuizCompleteFailure();
+            FinishQuiz();
         }
     }
 
-    private void QuizCompleteSuccess()
+    void FinishQuiz()
     {
-        if (quizPanelCanvasGroup != null)
+        quizUI.SetActive(false);
+        resultUI.SetActive(true);
+
+        // 80% Logic
+        float scorePercent = ((float)correctAnswers / currentSpot.questions.Count) * 100f;
+
+        if (scorePercent >= 80f)
         {
-            quizPanelCanvasGroup.interactable = true;
+            resultText.text = "Passed!\n" + scorePercent + "%\nBadge Earned!";
+            // Save the badge to the device
+            PlayerPrefs.SetInt(currentSpot.spotName, 1);
+            PlayerPrefs.Save();
         }
-        quizPanel.SetActive(false);
-        GameProgress.SetBadgeCollected(currentQuiz.landmarkID);
+        else
+        {
+            resultText.text = "Failed!\n" + scorePercent + "%\nYou need 80% to earn the badge.";
+        }
     }
 
-    private void QuizCompleteFailure()
-    {
-        if (quizPanelCanvasGroup != null)
-        {
-            quizPanelCanvasGroup.interactable = true;
-        }
-        quizPanel.SetActive(false);
-        currentQuestionIndex = 0;
-        currentQuiz = null;
-    }
-
-    private void Shuffle<T>(List<T> list)
-    {
-        for (int i = list.Count - 1; i > 0; i--)
-        {
-            int rnd = Random.Range(0, i + 1);
-            T temp = list[i];
-            list[i] = list[rnd];
-            list[rnd] = temp;
-        }
-    }
+   
 }
