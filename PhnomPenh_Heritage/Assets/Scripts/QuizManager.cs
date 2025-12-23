@@ -46,6 +46,10 @@ public class QuizManager : MonoBehaviour
 
     void Awake() 
     {
+        if (HeritageSpot.selectedSpot == null)
+        {
+            Debug.LogError("QUIZ: Data is NULL! The handshake failed.");
+        }
         // High-priority check
         if (HeritageSpot.selectedSpot != null)
         {

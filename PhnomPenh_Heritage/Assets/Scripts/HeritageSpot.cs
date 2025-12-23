@@ -4,9 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewSpot", menuName = "Quiz/HeritageSpot")]
 public class HeritageSpot : ScriptableObject
 {
+    public static HeritageSpot selectedSpot;
     public string spotName;
+    public string learningSceneName;
     public List<QuestionAndAnswers> questions;
 
-    // This MUST be outside all functions
-    public static HeritageSpot selectedSpot;
 }

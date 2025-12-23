@@ -12661,6 +12661,7 @@ GameObject:
   - component: {fileID: 1562980366}
   - component: {fileID: 1562980365}
   - component: {fileID: 1562980367}
+  - component: {fileID: 1562980370}
   m_Layer: 0
   m_Name: restaurant
   m_TagString: Untagged
@@ -12763,7 +12764,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6807485f32cf0d542aa71a695f986eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpotData: {fileID: 0}
+  mySpotData: {fileID: 11400000, guid: 4cce8b649d33cff44b69b29f87c02108, type: 2}
+--- !u!61 &1562980370
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562980364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5}
+  m_EdgeRadius: 0
 --- !u!1 &1584573355
 GameObject:
   m_ObjectHideFlags: 0
@@ -16416,6 +16462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSpots:
   - {fileID: 11400000, guid: fdcaa81943feac045aa8cacbb03c0df1, type: 2}
+  - {fileID: 11400000, guid: 4cce8b649d33cff44b69b29f87c02108, type: 2}
   winScreen: {fileID: 2021298738}
   counterText: {fileID: 642592562}
 --- !u!4 &2024572612

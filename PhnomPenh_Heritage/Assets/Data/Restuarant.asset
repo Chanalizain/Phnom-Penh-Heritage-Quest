@@ -12,5 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c368564208b3d454b8913dc68237984c, type: 3}
   m_Name: Restuarant
   m_EditorClassIdentifier: 
-  spotName: 
-  questions: []
+  spotName: Restuarant
+  learningSceneName: KhmerKitchenScene
+  questions:
+  - Question: what is liz fav food?
+    Answers:
+    - pizza
+    - seafood
+    - burito
+    - chicken run
+    CorrectAnswer: 3
+  - Question: what does liz allergy to?
+    Answers:
+    - seafood
+    - linna
+    - hotpot
+    - pho
+    CorrectAnswer: 2
