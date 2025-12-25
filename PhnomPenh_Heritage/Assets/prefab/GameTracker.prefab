@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSpots:
   - {fileID: 11400000, guid: 5504d84e64886cf40814276c4b4f4bc4, type: 2}
+  - {fileID: 11400000, guid: 10587e8ab4ed0724585444e5b7822f16, type: 2}
   - {fileID: 11400000, guid: 4cce8b649d33cff44b69b29f87c02108, type: 2}
   winScreen: {fileID: 0}
   counterText: {fileID: 0}
@@ -65,8 +66,11 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   volumeSlider: {fileID: 0}
   badgeInv: {fileID: 5011777710996341096}
-  badgeIcons:
+  badgeUIImages:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unlockedColor: {r: 1, g: 1, b: 1, a: 1}
+  sfxSource: {fileID: 0}
+  clickSound: {fileID: 0}
