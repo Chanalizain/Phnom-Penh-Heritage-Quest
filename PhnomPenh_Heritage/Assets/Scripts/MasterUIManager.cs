@@ -38,4 +38,36 @@ public class MasterUIManager : MonoBehaviour
             }
         }
     }
+    public void SetVolume(float value)
+    {
+        // AudioListener.volume controls EVERY sound in the entire game (0.0 to 1.0)
+        AudioListener.volume = value;
+
+        // Optional: Save the volume so it stays the same when you switch scenes
+        PlayerPrefs.SetFloat("MasterVolume", value);
+    }
+
+    void Start()
+    {
+        // When the scene starts, load the saved volume
+        float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1.0f);
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = savedVolume;
+        }
+        AudioListener.volume = savedVolume;
+    }
+    //click sound
+    [Header("SFX Settings")]
+    public AudioSource sfxSource; // A separate AudioSource for clicks
+    public AudioClip clickSound;  // Drag your click .mp3 or .wav here
+
+    public void PlayClickSound()
+    {
+        if (sfxSource != null && clickSound != null)
+        {
+            // PlayOneShot allows sounds to overlap without cutting each other off
+            sfxSource.PlayOneShot(clickSound);
+        }
+    }
 }
