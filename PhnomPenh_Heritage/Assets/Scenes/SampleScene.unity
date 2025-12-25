@@ -18784,7 +18784,7 @@ PrefabInstance:
     - target: {fileID: 5011777710996341096, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
       propertyPath: allSpots.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 10587e8ab4ed0724585444e5b7822f16, type: 2}
+      objectReference: {fileID: 11400000, guid: 4cce8b649d33cff44b69b29f87c02108, type: 2}
     - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
       propertyPath: sfxSource
       value: 
