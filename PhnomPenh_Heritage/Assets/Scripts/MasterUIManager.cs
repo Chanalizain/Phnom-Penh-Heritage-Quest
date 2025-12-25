@@ -9,7 +9,7 @@ public class MasterUIManager : MonoBehaviour
 
     [Header("Badge Settings")]
     public Image[] badgeUIImages; // Drag your 3 UI Images here
-    public Color lockedColor = new Color(0.3f, 0.3f, 0.3f, 0.5f); // Grey/Transparent
+    public Color lockedColor = new Color(0.95f, 0.95f, 0.95f, 1.0f); // Grey/Transparent
     public Color unlockedColor = Color.white; // Full Color
 
     public void OpenSettings()
