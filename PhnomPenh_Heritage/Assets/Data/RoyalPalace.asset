@@ -12,5 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c368564208b3d454b8913dc68237984c, type: 3}
   m_Name: RoyalPalace
   m_EditorClassIdentifier: 
-  spotName: 
-  questions: []
+  spotName: RoyalPalace
+  learningSceneName: RoyalPalace
+  questions:
+  - Question: ' Which building is traditionally used by kings to hold grand ceremonies?'
+    Answers:
+    - Preah Thineang Dheva Vinnichay
+    - ' The Silver Pagoda'
+    - The Garden
+    - The Mural Gallery
+    CorrectAnswer: 1
+  - Question: Wat Preah Keo is specifically known for being the place where the royal
+      family holds which type of events?
+    Answers:
+    - Agricultural planning
+    - Important Buddhist ceremonies
+    - Foreign trade negotiations
+    - Military parades
+    CorrectAnswer: 2
+  - Question: ' What is the primary spiritual purpose of the Guardian Lions (Singha)
+      found at the palace entrance?'
+    Answers:
+    - To act as a decorative clock
+    - To signal the start of a royal banquet
+    - To represent the different seasons of the year
+    - To protect from evil and bring good fortune
+    CorrectAnswer: 4
+  - Question: Whom do the four faces on the central spire represent, watching over
+      the directions of Cambodia?
+    Answers:
+    - The four main rivers of the land
+    - The architects of the palace
+    - Brahma, the God of Creation
+    - The Four Great Kings
+    CorrectAnswer: 3

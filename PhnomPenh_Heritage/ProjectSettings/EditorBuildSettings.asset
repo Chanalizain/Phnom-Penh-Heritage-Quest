@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MonumentQuizScene.unity
     guid: 8bdfd12f9682c43729017396e8f579e3
   - enabled: 1
+    path: Assets/Scenes/RoyalPalace.unity
+    guid: 075f86688c6d1ab478e72e07bfc439e4
+  - enabled: 0
     path: Assets/Scenes/RoyalPalaceScene.unity
     guid: da310d451050942e7b637cf70e1db37e
   - enabled: 1
