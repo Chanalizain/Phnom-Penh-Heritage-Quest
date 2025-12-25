@@ -18849,6 +18849,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 898646227}
     - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: lockedColor.b
+      value: 0.23773581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: lockedColor.g
+      value: 0.23773581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: lockedColor.r
+      value: 0.23773581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
       propertyPath: settingsPanel
       value: 
       objectReference: {fileID: 1021389261}

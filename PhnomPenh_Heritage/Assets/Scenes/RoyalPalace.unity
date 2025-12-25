@@ -1502,6 +1502,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1815974404}
+        m_TargetAssemblyTypeName: MasterUIManager, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &507305629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,6 +2553,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867325425}
   m_CullTransparentMesh: 1
+--- !u!1001 &884015444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7122267020761496653, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_Name
+      value: ClickSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 222.54494
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 231.0615
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5272162
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
 --- !u!1 &906584705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,6 +3336,11 @@ PolygonCollider2D:
       - {x: 1.22, y: -0.56}
       - {x: 1.2099999, y: -0.56}
   m_UseDelaunayMesh: 0
+--- !u!82 &1117264265 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 398061655882965918, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+  m_PrefabInstance: {fileID: 884015444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1126476142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,6 +4291,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameTracker
       objectReference: {fileID: 0}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 1117264265}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 735134c12d8b29449b7de3cb6cd6b7c1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4925,3 +5007,4 @@ SceneRoots:
   - {fileID: 1995827376}
   - {fileID: 562910310}
   - {fileID: 1929662724}
+  - {fileID: 884015444}
