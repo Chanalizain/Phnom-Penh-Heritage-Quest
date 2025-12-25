@@ -19,4 +19,6 @@ public class BuildingTrigger : MonoBehaviour
 
         SceneManager.LoadScene(mySpotData.learningSceneName); // Ensure this name is exactly right
     }
+
+    
 }
