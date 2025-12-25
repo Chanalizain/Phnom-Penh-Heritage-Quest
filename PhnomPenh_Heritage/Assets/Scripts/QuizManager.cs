@@ -121,7 +121,6 @@ public class QuizManager : MonoBehaviour
         if (scorePercent >= 80f)
         {
             resultText.text = "Passed!\n" + scorePercent + "%\nBadge Earned!";
-            // Save the badge to the device
             PlayerPrefs.SetInt(currentSpot.spotName, 1);
             PlayerPrefs.Save();
         }
@@ -131,5 +130,15 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-   
+    public void BackToLearningScene()
+    {
+        if (HeritageSpot.selectedSpot != null)
+        {
+            SceneManager.LoadScene(HeritageSpot.selectedSpot.learningSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+    }
 }
