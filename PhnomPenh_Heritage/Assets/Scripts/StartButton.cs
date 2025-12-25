@@ -12,4 +12,14 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void goToInstrumental()
+    {
+        SceneManager.LoadScene("InstrumentalScene");
+    }
+
+    public void backToArchitecture()
+    {
+        SceneManager.LoadScene("ArchitectureScene");
+    }
 }

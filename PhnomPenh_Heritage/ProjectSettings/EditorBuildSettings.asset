@@ -17,8 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoyalPalaceScene.unity
     guid: da310d451050942e7b637cf70e1db37e
-  - enabled: 0
-    path: Assets/Scenes/MuseumScene.unity
+  - enabled: 1
+    path: Assets/Scenes/InstrumentalScene.unity
     guid: 95a937bd31fae45c1889036082e75b64
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KhmerKitchenScene.unity
     guid: 5be6185f6d47f40d2bdd0064601646b6
+  - enabled: 1
+    path: Assets/Scenes/ArchitectureScene.unity
+    guid: fe26cafc46a7d44e78d3361b6117fbc9
   m_configObjects: {}

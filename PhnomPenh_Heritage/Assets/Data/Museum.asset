@@ -12,5 +12,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c368564208b3d454b8913dc68237984c, type: 3}
   m_Name: Museum
   m_EditorClassIdentifier: 
-  spotName: 
-  questions: []
+  spotName: Museum
+  learningSceneName: ArchitectureScene
+  questions:
+  - Question: Which temple is known for trees growing over the ruins?
+    Answers:
+    - Banteay Srei
+    - Preah Vihear
+    - Bayon
+    - Ta Prohm
+    CorrectAnswer: 4
+  - Question: Which instrument is commonly used for singing and storytelling?
+    Answers:
+    - Khim Toch
+    - Chapei Dang Veng
+    - Skor Samphor
+    - Takhe
+    CorrectAnswer: 2
+  - Question: Which instrument often leads the melody in Khmer classical music?
+    Answers:
+    - Skor Thom
+    - Khim Toch
+    - Roneat Ek
+    - Chhing
+    CorrectAnswer: 3
+  - Question: Which temple is famous for its smiling stone faces?
+    Answers:
+    - Angkor Wat
+    - Bayon Temple
+    - Preah Vihear
+    - Ta Prohm
+    CorrectAnswer: 2
+  - Question: Which instrument is a pair of large ceremonial drums?
+    Answers:
+    - Skor Daey
+    - Skor Samphor
+    - Skor Thom
+    - Chhing
+    CorrectAnswer: 3
+  - Question: Which temple is the largest religious monument in Cambodia?
+    Answers:
+    - Bayon
+    - Ta Prohm
+    - Angkor Wat
+    - Banteay Srei
+    CorrectAnswer: 3

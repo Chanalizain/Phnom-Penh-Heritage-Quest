@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 22121347}
   - component: {fileID: 22121346}
   - component: {fileID: 22121348}
+  - component: {fileID: 22121349}
   m_Layer: 0
   m_Name: Museum
   m_TagString: Untagged
@@ -220,7 +221,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6807485f32cf0d542aa71a695f986eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpotData: {fileID: 0}
+  mySpotData: {fileID: 11400000, guid: 10587e8ab4ed0724585444e5b7822f16, type: 2}
+--- !u!61 &22121349
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22121345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.67, y: 4.4}
+    newSize: {x: 5.67, y: 4.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.67, y: 4.4}
+  m_EdgeRadius: 0
 --- !u!1 &27949627
 GameObject:
   m_ObjectHideFlags: 0
@@ -16463,6 +16509,7 @@ MonoBehaviour:
   allSpots:
   - {fileID: 11400000, guid: fdcaa81943feac045aa8cacbb03c0df1, type: 2}
   - {fileID: 11400000, guid: 4cce8b649d33cff44b69b29f87c02108, type: 2}
+  - {fileID: 11400000, guid: 10587e8ab4ed0724585444e5b7822f16, type: 2}
   winScreen: {fileID: 2021298738}
   counterText: {fileID: 642592562}
 --- !u!4 &2024572612
@@ -16714,7 +16761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861952a6b145043a495d42e490b2eec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MuseumScene
+  sceneName: ArchitectureScene
 --- !u!1 &2072383671
 GameObject:
   m_ObjectHideFlags: 0
