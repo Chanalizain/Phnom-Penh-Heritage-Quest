@@ -49,12 +49,27 @@ public class MasterUIManager : MonoBehaviour
 
     void Start()
     {
-        // When the scene starts, load the saved volume
+        // 1. If the slider is missing (because we changed scenes), try to find the new one
+        if (volumeSlider == null)
+        {
+            GameObject sliderObj = GameObject.Find("VolumeSlider");
+            if (sliderObj != null)
+            {
+                volumeSlider = sliderObj.GetComponent<Slider>();
+            }
+        }
+
+        // 2. If we found a slider, set its value and add a listener via code
         float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1.0f);
         if (volumeSlider != null)
         {
             volumeSlider.value = savedVolume;
+
+            // This replaces the "On Value Changed" box in the Inspector
+            volumeSlider.onValueChanged.RemoveAllListeners();
+            volumeSlider.onValueChanged.AddListener(SetVolume);
         }
+
         AudioListener.volume = savedVolume;
     }
     //click sound
