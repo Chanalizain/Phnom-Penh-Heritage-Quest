@@ -431,6 +431,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &140636578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 406.27393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 245.97206
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.39396217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315471996522521211, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825031850923724162, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: m_Name
+      value: GameTracker
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 1925646885}
+    - target: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 735134c12d8b29449b7de3cb6cd6b7c1, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
 --- !u!4 &154409233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471378845668378300, guid: c1f03f20b459d44aea4b72b6518669cd, type: 3}
@@ -688,6 +753,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &339978010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339978012}
+  - component: {fileID: 339978011}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &339978011
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339978010}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 89429e6e5449c49e584b841fac62d7fa, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &339978012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339978010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 222.54494, y: 231.0615, z: -2.5272162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &343390370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471378845668378300, guid: c1f03f20b459d44aea4b72b6518669cd, type: 3}
@@ -779,6 +972,18 @@ MonoBehaviour:
       - m_Target: {fileID: 392340112}
         m_TargetAssemblyTypeName: StartButton, Assembly-CSharp
         m_MethodName: goHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1192373657}
+        m_TargetAssemblyTypeName: MasterUIManager, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -886,6 +1091,156 @@ MonoBehaviour:
   messageTextTitle: {fileID: 1695636364}
   messageText: {fileID: 1026875821}
   roomScroll: {fileID: 1501596320}
+--- !u!1 &427068081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427068082}
+  - component: {fileID: 427068085}
+  - component: {fileID: 427068084}
+  - component: {fileID: 427068083}
+  m_Layer: 0
+  m_Name: Bai Sach Chrouk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427068082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427068081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3420201, y: -0, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: 290.552, y: 140.002, z: 4.5047927}
+  m_LocalScale: {x: 0.26969886, y: 0.28525105, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 798845106}
+  m_Father: {fileID: 1603016512}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+--- !u!114 &427068083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427068081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c92fc7ccdf04860a4435d3ebffb007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTitle: BAI SACH CHROUK
+  npcMessage: Bai Sach Chrouk is grilled pork served with rice and pickled vegetables.
+    It is a popular breakfast food in Phnom Penh.
+  numberRenderer: {fileID: 798845107}
+  tickSprite: {fileID: 21300000, guid: ca80f110791ee4c58aff7e4aa3682b70, type: 3}
+  npcController: {fileID: 397070774}
+--- !u!61 &427068084
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427068081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.057501674, y: -0.5914929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.61, y: 3.77}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.5399895, y: 2.8311925}
+  m_EdgeRadius: 0
+--- !u!212 &427068085
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427068081}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: aa598a265cc9c4ef2b37513e6166e7b0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &453681287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,8 +2177,8 @@ Transform:
   m_GameObject: {fileID: 732089637}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3420201, y: -0, z: -0, w: 0.9396927}
-  m_LocalPosition: {x: 318.63885, y: 136.70328, z: 4.5047927}
-  m_LocalScale: {x: 0.20159614, y: 0.15350021, z: 1}
+  m_LocalPosition: {x: 318.655, y: 136.79, z: 4.5047927}
+  m_LocalScale: {x: 0.26286957, y: 0.22879422, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2137618571}
@@ -1886,11 +2241,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c92fc7ccdf04860a4435d3ebffb007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcTitle: Amok
-  npcMessage: Amok is cooked with coconut milk and spices.
+  npcTitle: FISH AMOK
+  npcMessage: Fish Amok is a traditional Cambodian dish made with fish, coconut milk,
+    and spices. It is often steamed and considered a national dish.
   numberRenderer: {fileID: 2137618572}
   tickSprite: {fileID: 21300000, guid: ca80f110791ee4c58aff7e4aa3682b70, type: 3}
   npcController: {fileID: 397070774}
+--- !u!1 &798845105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798845106}
+  - component: {fileID: 798845107}
+  m_Layer: 0
+  m_Name: NumberIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798845106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798845105}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.3420201, y: -0, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: 1.702, y: -0.655, z: 0.0768}
+  m_LocalScale: {x: 0.80197084, y: 0.28150764, z: 1.5378778}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 427068082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &798845107
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798845105}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 985b6b74a890d42f7a4a36bd758583a1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.17, y: 1.43}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &836280290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,7 +2703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111, y: -43}
+  m_AnchoredPosition: {x: 232, y: -72.789}
   m_SizeDelta: {x: 98.129, y: 32.5779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978225420
@@ -2313,6 +2753,18 @@ MonoBehaviour:
       - m_Target: {fileID: 397070774}
         m_TargetAssemblyTypeName: NPCController, Assembly-CSharp
         m_MethodName: CloseNPC
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1192373657}
+        m_TargetAssemblyTypeName: MasterUIManager, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2446,6 +2898,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1690651390}
         m_TargetAssemblyTypeName: LearningSceneController, Assembly-CSharp
         m_MethodName: ClickStartQuiz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1192373657}
+        m_TargetAssemblyTypeName: MasterUIManager, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2628,7 +3092,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is Amok, a traditional Khmer dish.
+  m_text: Fish Amok is a traditional Cambodian dish made with fish, coconut milk,
+    and spices. It is often steamed and considered a national dish.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2662,7 +3127,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2721,7 +3186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: 10}
+  m_AnchoredPosition: {x: -126.5, y: -6.5}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1042207028
@@ -3491,6 +3956,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1192373657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6090829343437121749, guid: f41aed14c0b687e4a9dbe2ef8ecc8d46, type: 3}
+  m_PrefabInstance: {fileID: 140636578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce822a0e43883a4b80fa3a7fd260a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211106888
 GameObject:
   m_ObjectHideFlags: 0
@@ -3743,6 +4219,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1849174756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1276783279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276783280}
+  - component: {fileID: 1276783281}
+  m_Layer: 0
+  m_Name: NumberIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276783280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276783279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.3420201, y: -0, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: 1.702, y: -0.655, z: 0.0768}
+  m_LocalScale: {x: 0.80197084, y: 0.28150764, z: 1.5378778}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1523418100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1276783281
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276783279}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 80ce3e312714d48649d1b4186a0b1f23, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.17, y: 1.43}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1295507743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,8 +4637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c92fc7ccdf04860a4435d3ebffb007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcTitle: Prahok Ktiss
-  npcMessage: Amok is cooked with coconut milk and spices.
+  npcTitle: PRAHOK KTISS
+  npcMessage: Prohok Ktiss is a Cambodian dip made from fermented fish mixed with
+    pork and coconut milk. It is usually eaten with fresh vegetables and rice.
   numberRenderer: {fileID: 532389287}
   tickSprite: {fileID: 21300000, guid: ca80f110791ee4c58aff7e4aa3682b70, type: 3}
   npcController: {fileID: 397070774}
@@ -4188,8 +4749,8 @@ Transform:
   m_GameObject: {fileID: 1328323731}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3420201, y: -0, z: -0, w: 0.9396927}
-  m_LocalPosition: {x: 310.80887, y: 134.17828, z: 4.5047927}
-  m_LocalScale: {x: 0.2438507, y: 0.20119274, z: 1}
+  m_LocalPosition: {x: 310.833, y: 134.289, z: 4.5047927}
+  m_LocalScale: {x: 0.26969886, y: 0.28525105, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 532389288}
@@ -4234,8 +4795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.56714, y: 53.91742}
-  m_SizeDelta: {x: 368.1076, y: 319.1265}
+  m_AnchoredPosition: {x: 382.8, y: 18.8}
+  m_SizeDelta: {x: 182.8481, y: 340.607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1399640266
 MonoBehaviour:
@@ -4257,7 +4818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5b38d75655e684b66a76a51110fb0065, type: 3}
+  m_Texture: {fileID: 2800000, guid: d3d2b1a6bacc44191800efc22c075cf9, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4672,7 +5233,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -136.5671, y: 106}
-  m_SizeDelta: {x: 700, y: 159.6933}
+  m_SizeDelta: {x: 900, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499600206
 MonoBehaviour:
@@ -4772,6 +5333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501596319}
   - component: {fileID: 1501596320}
+  - component: {fileID: 1501596321}
   m_Layer: 0
   m_Name: CameraTarget
   m_TagString: Untagged
@@ -4808,8 +5370,174 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.01
   keyScrollSpeed: 5
-  minX: -30
+  minX: -27
   maxX: 10
+--- !u!114 &1501596321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501596318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66658bef9b0584a40947be849d040494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcam: {fileID: 1042207029}
+  zoomSpeed: 2
+  minZoom: 2
+  maxZoom: 5
+--- !u!1 &1523418099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523418100}
+  - component: {fileID: 1523418103}
+  - component: {fileID: 1523418102}
+  - component: {fileID: 1523418101}
+  m_Layer: 0
+  m_Name: Beef_Lok_Lak
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1523418100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523418099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3420201, y: -0, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: 333.193, y: 134.308, z: 4.5047927}
+  m_LocalScale: {x: 0.31322825, y: 0.31183645, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1276783280}
+  m_Father: {fileID: 1603016512}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+--- !u!114 &1523418101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523418099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c92fc7ccdf04860a4435d3ebffb007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTitle: BEEF LOK LAK
+  npcMessage: Beef Lok Lak is a Cambodian stir-fried beef dish served with vegetables.
+    It is known for its tangy pepper-lime dipping sauce and is popular in city restaurants.
+  numberRenderer: {fileID: 1276783281}
+  tickSprite: {fileID: 21300000, guid: ca80f110791ee4c58aff7e4aa3682b70, type: 3}
+  npcController: {fileID: 397070774}
+--- !u!61 &1523418102
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523418099}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.057501674, y: -0.5914929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.08, y: 6.12}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.5399895, y: 2.8311925}
+  m_EdgeRadius: 0
+--- !u!212 &1523418103
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523418099}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: c82391e283a984378956ec71aef38cd6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1541984266
 GameObject:
   m_ObjectHideFlags: 0
@@ -4894,6 +5622,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1483312319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1587318433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7122267020761496653, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_Name
+      value: ClickSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 222.54494
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 231.0615
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5272162
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202340665056325368, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
 --- !u!1 &1603016511
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,6 +5710,8 @@ Transform:
   m_Children:
   - {fileID: 732089639}
   - {fileID: 1328323735}
+  - {fileID: 427068082}
+  - {fileID: 1523418100}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639078820
@@ -5089,8 +5876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183.99998, y: 35.000004}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -126.5, y: 49}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695636364
 MonoBehaviour:
@@ -5407,6 +6194,11 @@ Transform:
   - {fileID: 1735110804}
   m_Father: {fileID: 1500307128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1925646885 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 398061655882965918, guid: 15c5f97122a80b84abebdaa64e56ec0f, type: 3}
+  m_PrefabInstance: {fileID: 1587318433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1958088907
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,3 +6941,6 @@ SceneRoots:
   - {fileID: 1412066032}
   - {fileID: 1176968715}
   - {fileID: 1690651391}
+  - {fileID: 140636578}
+  - {fileID: 1587318433}
+  - {fileID: 339978012}

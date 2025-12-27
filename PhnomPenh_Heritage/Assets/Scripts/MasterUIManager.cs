@@ -7,6 +7,8 @@ public class MasterUIManager : MonoBehaviour
     public Slider volumeSlider;
     public BadgeInventory badgeInv;
 
+    public GameObject winPanel;
+
     [Header("Badge Settings")]
     public Image[] badgeUIImages; // Drag your 3 UI Images here
     public Color lockedColor = new Color(0.95f, 0.95f, 0.95f, 1.0f); // Grey/Transparent
@@ -19,6 +21,7 @@ public class MasterUIManager : MonoBehaviour
     }
 
     public void CloseSettings() => settingsPanel.SetActive(false);
+    public void CloseBadgeMaster() => winPanel.SetActive(false);
 
     public void UpdateVisuals()
     {

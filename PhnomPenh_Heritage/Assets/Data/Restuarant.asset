@@ -15,17 +15,34 @@ MonoBehaviour:
   spotName: Restuarant
   learningSceneName: KhmerKitchenScene
   questions:
-  - Question: what is liz fav food?
+  - Question: Which dish is considered a national Cambodian dish?
     Answers:
-    - pizza
-    - seafood
-    - burito
-    - chicken run
+    - Bai Sach Chrouk
+    - Prahok Ktiss
+    - Fish Amok
+    - Beef Lok Lak
     CorrectAnswer: 3
-  - Question: what does liz allergy to?
+  - Question: Which dish is traditionally steamed and cooked with coconut milk and
+      spices?
     Answers:
-    - seafood
-    - linna
-    - hotpot
-    - pho
-    CorrectAnswer: 2
+    - Prahok Ktiss
+    - Bai Sach Chrouk
+    - Beef Lok Lak
+    - Fish Amok
+    CorrectAnswer: 4
+  - Question: Which food is a Cambodian breakfast dish made of grilled pork with
+      rice?
+    Answers:
+    - Fish Amok
+    - Prahok Ktiss
+    - Bai Sach Chrouk
+    - Beef Lok Lak
+    CorrectAnswer: 3
+  - Question: Which dish is made from fermented fish mixed with pork and coconut
+      milk?
+    Answers:
+    - Prahok Ktiss
+    - Bai Sach Chrouk
+    - Beef Lok Lak
+    - Fish Amok
+    CorrectAnswer: 1
