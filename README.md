@@ -1,6 +1,6 @@
 # Phnom Penh Heritage Quest
 
-A 2D cultural exploration game where players travel through locations in Phnom Penh, interact with environments, learn about Khmer food and culture, and complete quizzes to become a Cultural Master.
+A 2D cultural exploration game where players travel through locations in Phnom Penh, interact with environments, learn about Khmer culture, and complete quizzes to earn the title of Cultural Master.
 
 ---
 
@@ -60,18 +60,22 @@ Players explore each location, learn key information, and complete quizzes to un
 ---
 
 ## Gameplay Flow
-1. Player selects a location from the map
-2. Enters an interior scene (for example, a restaurant)
-3. Explores the room by scrolling left and right
-4. Clicks on dishes to learn food-related information
-5. Completes all interactions (all ticks collected)
-6. Takes a quiz related to the learned content
+1. The player will first see the start scene, where a play button appears
+2. After the play button is clicked, the map of phnom penh city from the sky view will be shows
+3. Player selects a location to explore
+4. Then they will enter an interior learning scene (Royal Palace, National Museum, or Tranditional Khmer Restaurant)
+5. Explores the area with side scrolling and zoom in and out abilities 
+6. Clicks on interacable object with the number indicator icon on top to learn from the npm dialouge 
+7. They can either interact with all interactable objects (all number indicators change to tick icons)
+8. Or take the quiz directly
 
 ---
 
 ## Art Direction
 - Style: 2D stylized illustration
-- Perspective: Side-view
+- Perspective: 
+  - Sky view for the map
+  - Side view for the interior learning area
 - Visual Theme: Warm colors inspired by Khmer culture
 - Assets Include:
   - Traditional Khmer dishes
@@ -90,7 +94,7 @@ Players explore each location, learn key information, and complete quizzes to un
 Music:
 - Calm background music for exploration
 - Subtle cultural ambience
-- Location-based background music that math with the mood
+- Location-based background music that match with the mood
 
 Sound Effects:
 - Click interaction sounds
@@ -101,16 +105,17 @@ Sound Effects:
 - Engine: Unity 2D
 - Platform: macOS (Apple Silicon)
 - Controls:
-  - Scroll Left/Right: Mouse drag or Arrow keys
+  - Side Scrolling: Mouse drag or Arrow keys
   - Zoom In/Out: Mouse wheel or Arrow keys
   - Interact: Mouse click
 
 ### Key Scripts
-- HorizontalRoomScroll: Handles left/right camera movement
-- CameraZoom2D: Controls zoom in and out
-- DishInteractable: Manages obbject interaction and learning state
-- NPCController: Controls NPC UI panel and dialogue
-- QuizManager: Handles quiz logic and results
+- QuizManager: Handles the dynamic injection of questions and processes user answers during the assessment phase.
+- Win Script: The core logic for progression. It enforces the "80% Game Rule" and utilizes PlayerPrefs to permanently save badge data (0 or 1) once the passing threshold is met.
+- HorizontalRoomScroll: Manages the camera's X-axis movement to allow for smooth exploration of the 2D landmark environments.
+- CameraZoom2D: Controls the orthographic size of the camera, enabling players to zoom in on cultural artifacts for closer inspection.
+- DishInteractable: Manages individual object states. It tracks player interaction and updates the "learning state" UI (changing icons to checkmarks) once an item is studied.
+- NPCController: Manages the dialogue system, pulling historical facts from the data layer and displaying them via the NPC UI panel.
 
 ---
 
