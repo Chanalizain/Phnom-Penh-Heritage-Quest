@@ -142,6 +142,12 @@ Sound Effects:
 
 ---
 
+## Demo
+A video demo and build file are available here:
+https://drive.google.com/drive/folders/1Cf1FoC0Dl4q737_Dn1SYP6Nqz7yF53qz?usp=sharing
+
+---
+
 ## Course Information
 - Course: Game Development
 - Institute: Cambodia Academy of Digital Technology
